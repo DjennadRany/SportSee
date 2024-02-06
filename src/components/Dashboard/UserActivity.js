@@ -1,22 +1,20 @@
-// UserActivity.js
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useUserContext } from '../../context/UserContext';
+import { useParams } from 'react-router-dom';
 import GroupedBarChart from './UserActivity/GroupedBarChart.js';
 
 const UserActivity = () => {
+  const { id } = useParams();
+  const { fetchUserData, userData } = useUserContext();
   const [activityData, setActivityData] = useState([]);
 
   useEffect(() => {
-    // Appel API pour récupérer les données d'activité
-    axios.get('http://localhost:3000/user/12/activity')
-      .then(response => {
-        console.log('Activity Data:', response.data.data.sessions);
-        setActivityData(response.data.data.sessions);
-      })
-      .catch(error => {
-        console.error('Error fetching user activity:', error);
-      });
-  }, []);
+    fetchUserData(id);
+  }, [fetchUserData, id]);
+
+  useEffect(() => {
+    setActivityData(userData.activity);
+  }, [userData.activity]);
 
   return (
     <div>

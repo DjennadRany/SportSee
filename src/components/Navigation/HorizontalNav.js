@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 const HorizontalNav = () => {
   return (
     <nav>
-      <Link to="/user-profile">User Profile</Link>
-      <Link to="/user-activity">User Activity</Link>
-      <Link to="/key-figures">Key Figures</Link>
+      <Link to="/user/12/activity">User Activity</Link>
+      <Link to="/user/12/key-figures">Key Figures</Link>
     </nav>
   );
 };
