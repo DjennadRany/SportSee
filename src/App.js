@@ -10,18 +10,24 @@ import NotFound from './components/NotFound';
 const App = () => {
   return (
     <Router>
-      <UserContextProvider>
-        <div>
-          <HorizontalNav />
-          <VerticalNav />
+      <div>
+        <HorizontalNav />
+        <VerticalNav />
 
-          <Routes>
-            <Route path="/user/:id/activity" element={<UserActivity />} />
-            <Route path="/user/:id/key-figures" element={<KeyFigures />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
-      </UserContextProvider>
+        <Routes>
+          <Route path="/user/:id/activity" element={
+            <UserContextProvider>
+              <UserActivity />
+            </UserContextProvider>
+          } />
+          <Route path="/user/:id/key-figures" element={
+            <UserContextProvider>
+              <KeyFigures />
+            </UserContextProvider>
+          } />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </Router>
   );
 };

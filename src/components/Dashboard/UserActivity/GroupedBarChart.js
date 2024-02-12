@@ -1,16 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import isEqual from 'lodash/isEqual';
 
-const GroupedBarChart = ({ data }) => {
+const GroupedBarChart = ({ data, averageSessions }) => {
   const prevData = useRef([]);
-  const [yAxisDomain, setYAxisDomain] = useState(); // Valeur initiale arbitraire pour l'échelle Y
+  const [yAxisDomain, setYAxisDomain] = useState();
 
   useEffect(() => {
     if (!data || data.length === 0 || isEqual(prevData.current, data)) return;
 
     prevData.current = data;
-
     // Trouver la valeur maximale de kilogrammes
     const maxKilogram = Math.max(...data.map(item => item.kilogram));
     // Trouver la valeur maximale de calories
@@ -35,7 +34,7 @@ const GroupedBarChart = ({ data }) => {
     <div className="recharts-wrapper" style={{ position: 'relative', cursor: 'default', width: '835px', height: '300px' }}>
      
       <BarChart
-        width={835}
+        width={735}
         height={300}
         data={data}
         margin={{ top: 20, right: 40, bottom: 40, left: 40 }}
