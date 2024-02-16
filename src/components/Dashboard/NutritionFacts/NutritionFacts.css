@@ -1,0 +1,35 @@
+.nutrition-fact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px; /* Largeur ajustée pour contenir l'icône et le texte côte à côte */
+  height: 125px; /* Hauteur ajustée selon l'image */
+  background-color: #FBFBFB; /* Couleur de fond du carré gris */
+  margin-bottom: 20px; /* Espace entre les carrés */
+  padding: 10px; /* Espace intérieur du carré */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249); /* Ombre légère pour le relief */
+}
+
+.nutrition-icon {
+  width: 70px; /* Taille de l'icône ajustée */
+  height: 70px; /* Hauteur de l'icône ajustée */
+  margin-right: 10px; /* Espace entre l'icône et le texte */
+}
+
+.nutrition-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nutrition-amount {
+  font-weight: bold;
+  font-size: 20px; /* Taille du texte pour la quantité ajustée */
+  color: #282D30; /* Couleur du texte pour la quantité */
+  margin-bottom: 5px; /* Espace entre la quantité et le label */
+}
+
+.nutrition-label {
+  font-size: 14px; /* Taille du texte pour le label */
+  color: #74798C; /* Couleur du texte pour le label */
+}

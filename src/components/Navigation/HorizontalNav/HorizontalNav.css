@@ -1,0 +1,24 @@
+.horizontal-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000; /* Couleur de fond */
+    padding: 10px 0; /* Espacement vertical */
+  }
+  
+  .nav-logo {
+    height: 50px; /* Hauteur du logo */
+    margin-right: 20px; /* Espacement à droite du logo */
+  }
+  
+  .nav-link {
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Pas de soulignement */
+    font-weight: bold; /* Gras */
+    padding: 10px 20px; /* Espacement autour du texte */
+  }
+  
+  .nav-link:hover {
+    color: #e60000; /* Couleur du texte au survol */
+    text-decoration: underline; /* Soulignement au survol */
+  }
