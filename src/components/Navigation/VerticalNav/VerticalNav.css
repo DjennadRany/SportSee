@@ -1,0 +1,32 @@
+.vertical-nav {
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    width: 4%;
+  }
+  
+  .nav-logo {
+    margin-bottom: 40px; /* Ajustez selon votre design */
+  }
+  
+  .nav-item {
+    margin: 10px 0;
+  }
+  
+  .nav-item img {
+    width: 100%; /* Ajustez la taille selon vos besoins */
+    height: auto;
+  }
+  
+  .nav-footer {
+    position: absolute;
+    bottom: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 12px;
+    text-align: center;
+  }

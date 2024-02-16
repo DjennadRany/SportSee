@@ -1,0 +1,30 @@
+.radial-bar-chart-container {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .radial-bar-chart-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 0%);
+    text-align: center;
+    
+}
+  
+  .radial-bar-chart-label .percentage {
+    font-size: 30px;
+    font-weight: bold;
+    fill: #000;
+  }
+  
+  .radial-bar-chart-label .objective {
+    font-size: 14px;
+    fill: #666;
+    margin-top: 4px;
+  }

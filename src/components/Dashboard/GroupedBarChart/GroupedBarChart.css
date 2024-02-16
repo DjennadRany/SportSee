@@ -1,0 +1,11 @@
+.recharts-wrapper {
+    width: 100%; /* Utilisez 100% au lieu d'une largeur fixe pour prendre toute la largeur */
+    height: 300px; /* Hauteur fixe ou ajustable selon vos besoins */
+  }
+  
+  /* Assurez-vous que le conteneur parent de .recharts-wrapper a une largeur définie */
+  /* Par exemple, si .recharts-wrapper est directement dans .dashboard-part, vous pouvez faire: */
+  .dashboard-part {
+    width: 100%; /* ou la largeur désirée */
+    /* autres styles */
+  }

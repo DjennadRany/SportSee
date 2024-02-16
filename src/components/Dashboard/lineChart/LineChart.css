@@ -1,0 +1,65 @@
+.line-chart-container {
+  background-color: #FF0000; /* Rouge de fond */
+  margin: 0 1em;
+  border-radius: 5px;
+}
+
+.recharts-cartesian-axis-tick {
+  fill: #FFFFFF; /* Couleur du texte des axes */
+}
+
+.recharts-cartesian-grid {
+  display: none;
+}
+
+/* Style pour la ligne du graphique */
+.recharts-area-curve {
+  stroke-width: 2; /* Rendre la ligne plus épaisse */
+}
+
+/* Style pour la zone sous la courbe */
+.recharts-area-area {
+  fill-opacity: 0; /* Supprimer le dégradé pour une couleur pleine */
+}
+
+/* Style pour le tooltip */
+.custom-tooltip {
+  background-color: #FFFFFF;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1); /* Ajouter une ombre pour le relief */
+  pointer-events: none; /* Assurez-vous que le tooltip ne bloque pas les événements de la souris */
+}
+
+.recharts-reference-line {
+  display: none;
+}
+
+.recharts-reference-dot {
+  display: none;
+}
+
+/* Style pour le conteneur global du graphique */
+.line-chart-wrapper {
+  width: 100%;
+  margin: 0 1em;
+  position: relative;
+  background: linear-gradient(to right, #FF0000, #c90303); /* Dégradé de rouge */
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden; /* Pour que le border-radius s'applique aux enfants */
+}
+
+.line-chart-title {
+  color: #FFFFFF;
+  margin-left: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+/* ... (le reste du CSS reste inchangé) */

@@ -19,9 +19,10 @@ export const UserContextProvider = ({ children, userId }) => {
       const activityResponse = await axios.get(`http://localhost:3000/user/${userId}/activity`);
       const averageSessionsResponse = await axios.get(`http://localhost:3000/user/${userId}/average-sessions`);
       const performanceResponse = await axios.get(`http://localhost:3000/user/${userId}/performance`);
-
+  
       setUserData({
-        user: userResponse.data.data.userInfos,
+        user: userResponse.data.data.userInfos, // Informations de l'utilisateur
+        keyData: userResponse.data.data.keyData, // Ajout de keyData ici
         activity: activityResponse.data.data.sessions,
         averageSessions: averageSessionsResponse.data.data.sessions,
         performance: performanceResponse.data.data,

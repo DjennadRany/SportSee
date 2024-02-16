@@ -1,0 +1,36 @@
+.user-activity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .user-activity-title {
+    margin-bottom: 20px;
+  }
+  
+  .charts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .main-charts {
+    display: flex;
+    flex-direction: column;
+    flex: 3; /* Ajustez la proportion selon vos besoins */
+    padding-right: 20px; /* Ajustez l'espacement selon vos besoins */
+    max-width: 1024px;
+  }
+  
+  .side-charts {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Ajustez la proportion selon vos besoins */
+    align-items: center;
+  }
+  .blockcomptree {
+    display: inline-flex;
+}
+  /* Ajoutez des styles supplémentaires pour les graphiques et les faits nutritionnels si nécessaire */

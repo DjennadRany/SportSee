@@ -1,32 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'; // Import Navigate
 import { UserContextProvider } from './context/UserContext';
-import HorizontalNav from './components/Navigation/HorizontalNav';
-import VerticalNav from './components/Navigation/VerticalNav';
-import UserActivity from './components/Dashboard/UserActivity';
-import KeyFigures from './components/Dashboard/KeyFigures';
-import NotFound from './components/NotFound';
+import HorizontalNav from './components/Navigation/HorizontalNav/HorizontalNav';
+import VerticalNav from './components/Navigation/VerticalNav/VerticalNav';
+import UserActivity from './tamplet/userActivity/UserActivity';
+import NotFound from './tamplet/NotFound';
+import './App.css'; 
+
 
 const App = () => {
+
   return (
     <Router>
       <div>
         <HorizontalNav />
+        <div className="blockApp">
         <VerticalNav />
 
         <Routes>
-          <Route path="/user/:id/activity" element={
+          <Route path="/" element={<Navigate replace to={`/user/12/`} />} />
+          <Route path="/user/:id/" element={
             <UserContextProvider>
               <UserActivity />
             </UserContextProvider>
           } />
-          <Route path="/user/:id/key-figures" element={
-            <UserContextProvider>
-              <KeyFigures />
-            </UserContextProvider>
-          } />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </div>
       </div>
     </Router>
   );

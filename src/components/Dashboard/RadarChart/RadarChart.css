@@ -1,0 +1,9 @@
+.radar-chart-container {
+    width: 450px; /* Largeur du conteneur fixée à 450px */
+    height: 450px; /* Hauteur du conteneur fixée à 450px pour former un carré */
+    background: #2B2D30; /* Couleur de fond ajustée pour correspondre à l'image */
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
