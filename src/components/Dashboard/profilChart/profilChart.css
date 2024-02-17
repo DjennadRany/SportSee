@@ -1,0 +1,20 @@
+.profile-chart-container {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+  .profile-chart-container h2 {
+    color: #282D30; /* Couleur de texte foncée */
+    font-size: 3rem; /* Taille de police pour 'Bonjour' */
+    margin: 0.5rem; /* Espace en dessous du 'Bonjour' */
+  }
+  
+  .profile-chart-container h2 span {
+    color: #E60000; /* Couleur de texte pour le prénom */
+  }
+  
+  .profile-chart-container p {
+    color: #74798C; /* Couleur de texte pour le message de félicitations */
+    font-size: 1.25rem; /* Taille de police pour le message de félicitations */
+  }

@@ -7,6 +7,8 @@ import LineChartComponent from '../../components/Dashboard/lineChart/LineChart.j
 import RadialBarChartComponent from '../../components/Dashboard/RadialBarChart/RadialBarChart.js';
 import { ResponsiveContainer } from 'recharts';
 import NutritionFacts from '../../components/Dashboard/NutritionFacts/NutritionFacts.js';
+import ProfilChart from '../../components/Dashboard/profilChart/profilChart.js'; // Ajoutez cette ligne pour importer ProfileChart
+
 import './UserActivity.css'; // Assurez-vous que le chemin d'importation est correct
 
 const UserActivity = () => {
@@ -33,7 +35,7 @@ const UserActivity = () => {
 
   return (
     <div className="user-activity-container">
-   
+<ProfilChart userData={userData} loading={loading} />
       <div className="charts-container">
         <div className="main-charts">
           <GroupedBarChart data={userData.activity} averageSessions={userData.averageSessions} />
