@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import isEqual from 'lodash/isEqual';
+import './GroupedBarChart.css';
 
 const GroupedBarChart = ({ data }) => {
   const prevData = useRef([]);
@@ -18,6 +19,20 @@ const GroupedBarChart = ({ data }) => {
   }, [data]);
 
   return (
+    <div className="charts-containerGroup">
+      <div className='blockleg'>
+    <h2 className="chart-title">Activité quotidienne</h2>
+    <div className="legend">
+      <span className="legend-item">
+        <span className="legend-color-box" style={{ backgroundColor: 'black' }}></span>
+        Poids (kg)
+      </span>
+      <span className="legend-item">
+        <span className="legend-color-box" style={{ backgroundColor: 'red' }}></span>
+        Calories brûlées (kCal)
+      </span>
+    </div>
+    </div>
     <div className="recharts-wrapper" style={{ width: '100%', height: '300px' }}>
       <BarChart
         width={1024} // Définissez la largeur fixe ici
@@ -47,6 +62,7 @@ const GroupedBarChart = ({ data }) => {
         <Bar dataKey="kilogram" fill="black" yAxisId="left" barSize={7} radius={[3, 3, 0, 0]} />
         <Bar dataKey="calories" fill="red" yAxisId="right" barSize={7} radius={[3, 3, 0, 0]} />
       </BarChart>
+    </div>
     </div>
   );
 };

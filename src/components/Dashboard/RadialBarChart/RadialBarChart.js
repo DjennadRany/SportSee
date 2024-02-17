@@ -1,13 +1,25 @@
 import React from 'react';
 import { RadialBarChart, RadialBar, PolarAngleAxis } from 'recharts';
-import './RadialBarChart.css'; // Assurez-vous que le chemin est correct
+import './RadialBarChart.css'; 
 
 const RadialBarChartComponent = ({ percentage }) => {
   const data = [{ name: 'Score', value: percentage, fill: '#ff0000' }];
 
   return (
-    <div className="radial-bar-chart-container">
-      <RadialBarChart width={300} height={300} innerRadius={105} outerRadius={140} barSize={10} data={data} startAngle={90} endAngle={450}>
+    <div className="radial-bar-chart-container scroreBloc">
+      <h2 className="radial-chart-title">Score</h2> {/* Titre ajouté */}
+      <RadialBarChart
+        width={300}
+        height={300}
+        innerRadius={105}
+        outerRadius={140}
+        barSize={10}
+        data={data}
+        startAngle={90}
+        endAngle={450}
+        cx="50%"
+        cy="50%"
+      >
         <PolarAngleAxis type="number" domain={[0, 100]} angleAxisId={0} tick={false} />
         <RadialBar
           background

@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
   
   .user-activity-title {
@@ -19,7 +20,7 @@
   .main-charts {
     display: flex;
     flex-direction: column;
-    flex: 3; /* Ajustez la proportion selon vos besoins */
+    flex: 3; 
     padding-right: 20px; /* Ajustez l'espacement selon vos besoins */
     max-width: 1024px;
   }
@@ -27,8 +28,9 @@
   .side-charts {
     display: flex;
     flex-direction: column;
-    flex: 1; /* Ajustez la proportion selon vos besoins */
+    flex: 1; 
     align-items: center;
+    margin-left: 3em;
   }
   .blockcomptree {
     display: inline-flex;

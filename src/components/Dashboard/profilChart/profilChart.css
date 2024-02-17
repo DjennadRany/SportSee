@@ -1,8 +1,7 @@
 .profile-chart-container {
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-
+  padding: 20px;
+  border-radius: 5px;
+  padding-bottom: 0;
 }
   .profile-chart-container h2 {
     color: #282D30; /* Couleur de texte foncée */

@@ -1,11 +1,52 @@
+.charts-containerGroup {
+  background-color: #fbfbfb;
+  margin: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+.blockleg {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.chart-title {
+
+  font-size: 1.5em; /* Taille de la police pour le titre */
+}
+
+.legend {
+  display: flex;
+
+}
+
+.legend-item {
+  display: flex;
+  align-items: center; /* Centrer les éléments de la légende verticalement */
+  margin-right: 15px;
+  font-size: 1em; /* Taille de la police pour les éléments de la légende */
+}
+
+.legend-color-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%; /* Rend les boîtes de couleur rondes */
+  display: inline-block;
+  margin-right: 5px;
+}
+
 .recharts-wrapper {
-    width: 100%; /* Utilisez 100% au lieu d'une largeur fixe pour prendre toute la largeur */
-    height: 300px; /* Hauteur fixe ou ajustable selon vos besoins */
-  }
-  
-  /* Assurez-vous que le conteneur parent de .recharts-wrapper a une largeur définie */
-  /* Par exemple, si .recharts-wrapper est directement dans .dashboard-part, vous pouvez faire: */
-  .dashboard-part {
-    width: 100%; /* ou la largeur désirée */
-    /* autres styles */
-  }
+  width: 100%; /* Utilisez 100% au lieu d'une largeur fixe pour prendre toute la largeur */
+  height: 300px; /* Hauteur fixe ou ajustable selon vos besoins */
+}
+
+/* Styles supplémentaires pour les axes, les barres, etc., si nécessaire */

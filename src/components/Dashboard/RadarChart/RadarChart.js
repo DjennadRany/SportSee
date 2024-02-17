@@ -16,7 +16,7 @@ const RadarChartComponent = ({ data, kindMapping }) => {
   }));
 
   return (
-    <div style={{ width: '350px', background: '#4b4b4b', height: '300px', borderRadius: '12px' }}>
+    <div style={{ width: '350px', background: '#4b4b4b', height: '300px', borderRadius: '5px' }}>
 <RadarChart cx="50%" cy="50%" outerRadius="70%" width={350} height={300} data={transformedData}>
   <PolarGrid />
   <PolarAngleAxis dataKey="kind" />

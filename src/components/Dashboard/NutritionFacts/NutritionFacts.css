@@ -5,7 +5,7 @@
   width: 240px; /* Largeur ajustée pour contenir l'icône et le texte côte à côte */
   height: 125px; /* Hauteur ajustée selon l'image */
   background-color: #FBFBFB; /* Couleur de fond du carré gris */
-  margin-bottom: 20px; /* Espace entre les carrés */
+  margin-bottom: 37px; /* Espace entre les carrés */
   padding: 10px; /* Espace intérieur du carré */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249); /* Ombre légère pour le relief */
 }
